@@ -143,8 +143,10 @@ public:
 
 		if (onPress && !isButtonPressed) {
 			isButtonPressed = true;
-			return isButtonPressed;
+			return true;
 		}
+
+		return false;
 	}
 	inline sf::Color const* GetColors() const { return colors; }
 
