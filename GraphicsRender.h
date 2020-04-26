@@ -27,9 +27,7 @@ public:
 	}
 
 	Level(const std::vector<std::string>& level, uint32_t w, uint32_t h)
-		: levelVector(level), width(w), height(h) {
-		width = height = 0;
-	}
+		: levelVector(level), width(w), height(h) {}
 
 	void SetSize(uint32_t w, uint32_t h) {
 		width = w;
